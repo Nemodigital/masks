@@ -1,0 +1,104 @@
+/* colores */
+:root {
+--color-bg-primario: #0378A6;
+--color-bg-second: #0388A6;
+--color-bg-terc: #04C4D9;
+--color-bg-cuart: #BFD6D9;
+--color-bg-quin: #59D9B5;
+}
+
+/* fuentes */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-bg-cuart);
+}
+h1 {
+   font-family: 'Roboto', sans-serif; 
+}
+
+/** Redes Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: var(--color-bg-terc);
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+/* NAVEGACION */
+/* color verde */
+.navegacion {
+    background-color:var(--color-bg-second);
+}
+/* hacer blanco el botón de hamburguesa */
+.navbar-light .navbar-toggler {
+    background-color: #ffffff;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+/* linea blanca del menú */
+/* ponemos los dos bordes de lineas blancas */
+.nav-principal {
+    background-image: url(../img/border_horizontal.png),
+                        url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+/* enlaces */
+.nav-link {
+    color: var(--color-bg-terc);
+    font-size: 1.4rem;
+    transition: background-color .5s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-link:hover {
+    background-color: #bde8dd;
+    color: var(--color-bg-primario);
+}
+/* carousel */
+.carousel-caption h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+/* imagen principal */
+/** Nosotros **/
+.imagen-principal {
+    background-color: var(--color-bg-quin);
+    min-height: 35rem;
+}
+.imagen-nosotros {
+    min-height: 35rem;
+    background-image: url(../img/nosotros.jpg);
+}
