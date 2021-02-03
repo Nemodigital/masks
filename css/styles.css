@@ -14,9 +14,6 @@ body {
     background-color: var(--color-bg-cuart);
     color:var(--color-bg-sex)
 }
-h1 {
-   font-family: 'Roboto', sans-serif; 
-}
 
 /** Redes Sociales **/
 .sociales ul {
@@ -79,23 +76,84 @@ h1 {
     background-color: var(--color-bg-cuart);
     color: var(--color-bg-second);
 }
-/* carousel */
-.carousel-caption h3 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: #ffffff;
-}
 
-/* imagen principal */
-/** Nosotros **/
-.imagen-principal {
+/** Somos fabricantes **/
+.fondo-principal {
     background-color: var(--color-bg-second);
     min-height: 35rem;
+    color:var(--color-bg-sex)
 }
-.imagen-nosotros {
-    min-height: 35rem;
+.imagen-fabrica {
+    min-height: 15rem;
     background-image: url(/img/fabrica.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+/* composición */
+.texto-composicion {
+    color: var(--color-bg-second);
+}
+.composicion {
+    min-height: 35rem;
+}
+.imagen-composicion {
+    min-height: 25rem;
+    background-size: 100%;
+    background-image: url(/img/mascarillas-quirúrgicas-3-capas.jpg);
+    background-repeat: no-repeat;
+}
+/* creamos un media query para que se vean las imágenes grandes y más altas en pantalla grande y tablet */
+@media (min-width: 768px) {
+    /* seleccionamos el primer div de imagen-superior e imagen-inferior */
+     .imagen-fabrica,
+     .imagen-composicion {
+         height: 35rem;
+         background-size: 100%;
+     } 
+ }
+
+
+/* Catálogo */
+.encabezado {
+    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif; 
+    color: var(--color-bg-sex);
+    line-height: 2.4rem;
+}
+.encabezado span {
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--color-bg-sex);
+}
+.catalogo {
+    background-color: var(--color-bg-second);
+}
+.catalogo p {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-bg-sex);
+    font-size: 1.6rem;
+}
+.imagen-catalogo {
+    border: 6px solid #ffffff;
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+
+.servicio-info {
+    background-color: var(--color-bg-second);
+    margin-top: -1rem;
+    width: 95%;
+}
+.servicio-info .btn-primary {
+    border-radius: 0;
+    background-color:var(--color-bg-quin);
+    border: none;
+}
+@media (min-width: 768px) {
+    .servicio-info {
+        width: 94%;
+    }
 }
