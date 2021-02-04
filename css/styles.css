@@ -6,6 +6,7 @@
 --color-bg-cuart: #BFD6D9;
 --color-bg-quin: #59D9B5;
 --color-bg-sex: #f0f2f3;
+
 }
 
 /* fuentes */
@@ -13,6 +14,9 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: var(--color-bg-cuart);
     color:var(--color-bg-sex)
+}
+.texto-azul {
+    color: var(--color-bg-second);
 }
 
 /** Redes Sociales **/
@@ -101,7 +105,7 @@ body {
 .imagen-composicion {
     min-height: 25rem;
     background-size: 100%;
-    background-image: url(/img/mascarillas-quirúrgicas-3-capas.jpg);
+    background-image: url(/img/mascarillas-quirúrgicas-3-capas.png);
     background-repeat: no-repeat;
 }
 /* creamos un media query para que se vean las imágenes grandes y más altas en pantalla grande y tablet */
@@ -110,6 +114,14 @@ body {
      .imagen-fabrica,
      .imagen-composicion {
          height: 35rem;
+         background-size: 100%;
+     } 
+ }
+ @media (min-width: 1400px) {
+    /* seleccionamos el primer div de imagen-superior e imagen-inferior */
+     .imagen-fabrica,
+     .imagen-composicion {
+         height: 40rem;
          background-size: 100%;
      } 
  }
@@ -142,18 +154,76 @@ body {
     transition: transform .3s ease;
 }
 
-.servicio-info {
+.catalogo-info {
     background-color: var(--color-bg-second);
     margin-top: -1rem;
     width: 95%;
 }
-.servicio-info .btn-primary {
+.catalogo-info .btn-primary {
     border-radius: 0;
     background-color:var(--color-bg-quin);
     border: none;
+    transition: 0.3s;
+}
+.catalogo-info .btn-primary:hover {
+    transform: scale(1.1);
 }
 @media (min-width: 768px) {
-    .servicio-info {
+    .catalogo-info {
         width: 94%;
     }
+}
+
+/* citas */
+.citas {
+    background-image: url(/img/oficinas.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: var(--color-bg-sex);
+}
+@media (min-width: 992px) {
+    .citas {
+        background-size: cover;
+    }
+}
+.citas h3 {
+    font-size: 3.5rem;
+    font-family: 'Lato', sans-serif;
+}
+.citas p {
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+.btn-primary {
+    background-color:var(--color-bg-quin);
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    transform: scale(1.1);
+    background-color:var(--color-bg-quin);
+}
+
+/* footer */
+.footer-sitio {
+    background-color: var(--color-bg-second);
+}
+.footer-sitio ul {
+    list-style: none;
+    line-height: 2.5rem;
+}
+.footer-sitio a {
+    color: var(--color-bg-sex);
+    text-decoration: none;
+}
+/* copyright */
+.copyright {
+    background-color: var(--color-bg-second);
+    color: var(--color-bg-sex);
+    font-size: .8rem;
 }
