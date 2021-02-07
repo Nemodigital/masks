@@ -88,7 +88,7 @@ body {
     color:var(--color-bg-sex)
 }
 .imagen-fabrica {
-    min-height: 15rem;
+    min-height: 20rem;
     background-image: url(/img/fabrica.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -102,6 +102,7 @@ body {
 .composicion {
     min-height: 35rem;
 }
+
 .imagen-composicion {
     min-height: 25rem;
     background-size: 100%;
@@ -109,7 +110,7 @@ body {
     background-repeat: no-repeat;
 }
 /* creamos un media query para que se vean las imágenes grandes y más altas en pantalla grande y tablet */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     /* seleccionamos el primer div de imagen-superior e imagen-inferior */
      .imagen-fabrica,
      .imagen-composicion {
@@ -215,7 +216,7 @@ body {
 }
 .footer-sitio ul {
     list-style: none;
-    line-height: 2.5rem;
+    /* line-height: 2.5rem; */
 }
 .footer-sitio a {
     color: var(--color-bg-sex);
@@ -226,4 +227,54 @@ body {
     background-color: var(--color-bg-second);
     color: var(--color-bg-sex);
     font-size: .8rem;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+.hero h2 {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: var(--color-bg-quin);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 2.8rem;
+}
+.contenido-principal p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: var(--color-bg-second);
+}
+
+/* Sidebar */
+aside {
+    background-color: var(--color-bg-quin);
+    color: #ffffff;
+}
+/* Acordeon / Servicios */
+#servicios .card-header {
+    background-color: #e082a8;
+    padding: 0 1.25rem;
+}
+#servicios .card-header .btn-link {
+    color: #ffffff;
+    background-color: #e082a8;
+    font-size: 1.6rem;
+}
+#servicios .card-body {
+    font-size: 1.2rem;
+}
+/* Cupón / Servicios */
+.cupon {
+    border: 3px dashed #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+.cupon .display-4 {
+    font-size: 2rem;
+}
+.cupon p {
+    font-size: 1.2rem;
 }
