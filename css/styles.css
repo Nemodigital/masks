@@ -175,7 +175,7 @@ body {
     }
 }
 
-/* citas */
+/* citas - hablamos */
 .citas {
     background-image: url(/img/oficinas.jpg);
     background-repeat: no-repeat;
@@ -208,25 +208,6 @@ body {
 .btn-primary:hover {
     transform: scale(1.1);
     background-color:var(--color-bg-quin);
-}
-
-/* footer */
-.footer-sitio {
-    background-color: var(--color-bg-second);
-}
-.footer-sitio ul {
-    list-style: none;
-    /* line-height: 2.5rem; */
-}
-.footer-sitio a {
-    color: var(--color-bg-sex);
-    text-decoration: none;
-}
-/* copyright */
-.copyright {
-    background-color: var(--color-bg-second);
-    color: var(--color-bg-sex);
-    font-size: .8rem;
 }
 
 /* Hero */
@@ -263,27 +244,22 @@ aside a {
 aside a:hover {
     color: var(--color-bg-sex);
 }
-/* Acordeon / Servicios */
-#servicios .card-header {
-    background-color: #e082a8;
-    padding: 0 1.25rem;
+
+/* footer */
+.footer-sitio {
+    background-color: var(--color-bg-second);
 }
-#servicios .card-header .btn-link {
-    color: #ffffff;
-    background-color: #e082a8;
-    font-size: 1.6rem;
+.footer-sitio ul {
+    list-style: none;
+    /* line-height: 2.5rem; */
 }
-#servicios .card-body {
-    font-size: 1.2rem;
+.footer-sitio a {
+    color: var(--color-bg-sex);
+    text-decoration: none;
 }
-/* Cupón / Servicios */
-.cupon {
-    border: 3px dashed #ffffff;
-    font-family: 'Lato', sans-serif;
-}
-.cupon .display-4 {
-    font-size: 2rem;
-}
-.cupon p {
-    font-size: 1.2rem;
+/* copyright */
+.copyright {
+    background-color: var(--color-bg-second);
+    color: var(--color-bg-sex);
+    font-size: .8rem;
 }
