@@ -244,6 +244,32 @@ aside a {
 aside a:hover {
     color: var(--color-bg-sex);
 }
+/* modal - nosotros */
+@media (min-width: 768px) {
+    .imagenes-instalaciones {
+        width: 225px;
+        margin-left: 5px;
+    }
+}
+@media (min-width: 992px) {
+    .imagenes-instalaciones {
+        width: 200px;
+        margin-left: 5px;
+    }
+}
+@media (min-width: 1200px) {
+    .imagenes-instalaciones {
+        width: 240px;
+        margin-left: 5px;
+    }
+}
+@media (min-width: 1400px) {
+    .imagenes-instalaciones {
+        width: 280px;
+        margin-left: 5px;
+    }
+}
+
 
 /* footer */
 .footer-sitio {
