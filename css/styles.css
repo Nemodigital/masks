@@ -254,6 +254,15 @@ aside {
     background-color: var(--color-bg-quin);
     color: #ffffff;
 }
+aside .contacto-sidebar {
+    font-size: 1.5rem;
+}
+aside a {
+    color: var(--color-bg-sex);
+}
+aside a:hover {
+    color: var(--color-bg-sex);
+}
 /* Acordeon / Servicios */
 #servicios .card-header {
     background-color: #e082a8;
