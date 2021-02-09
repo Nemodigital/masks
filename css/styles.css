@@ -174,6 +174,40 @@ body {
         width: 94%;
     }
 }
+/* página catalogo */
+.fondo-catalogo {
+    background-color: var(--color-bg-second);
+    height: 15rem;
+    color:var(--color-bg-sex)
+}
+.imagen-mascarilla {
+    min-height: 15rem;
+    background-image: url(/img/higienicas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.productos .card {
+    border: none;
+}
+.productos .card-body {
+    background-color: var(--color-bg-second);
+}
+.productos .card a {
+    color: var(--color-bg-sex);
+}
+.productos .card a:hover {
+    text-decoration: none;
+}
+.productos .card-title {
+    color: var(--color-bg-sex);
+    font-size: 1.5rem;
+}
+.productos .card-text {
+    font-size: 1rem;
+}
+
+
 
 /* citas - hablamos */
 .citas {
@@ -201,7 +235,6 @@ body {
     border: 0;
     padding: 1rem 5rem;
     border-radius: 0;
-    font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     transition: 0.3s;
 }
