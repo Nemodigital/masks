@@ -34,7 +34,7 @@ body {
     display: inline-block;
     vertical-align: top;
     padding: 0.4rem;
-    content: '\f08e';
+    content: '\f08e'; 
     -webkit-font-smoothing: antialiased;
     font-size: 2rem;
     color: var(--color-bg-terc);
@@ -187,6 +187,20 @@ body {
     background-position: center;
     background-size: cover;
 }
+.imagen-mascarilla-tela {
+    min-height: 15rem;
+    background-image: url(/img/tela.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.imagen-mascarilla-ffp2 {
+    min-height: 15rem;
+    background-image: url(/img/fpp2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .productos .card {
     border: none;
 }
@@ -205,9 +219,52 @@ body {
 }
 .productos .card-text {
     font-size: 1rem;
+    color: var(--color-bg-sex);
 }
 
-
+/* producto especificaciones */
+.imagen-mascarilla {
+    border: 1px solid var(--color-bg-second);
+}
+.contenido-mascarillas h4, h5, p, ol {
+    color: var(--color-bg-second);
+}
+/* listas productos especificaciones */
+ol {
+    list-style-type: none;
+    counter-reset: lista-personalizada;
+    margin-top: 2rem;
+    }
+    
+    ol li {
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 4px 0 10px 50px;
+    margin-bottom: 10px;
+    background:var(--color-bg-sex);
+    }
+    
+    ol li:before {
+    content: counter(lista-personalizada);
+    counter-increment: lista-personalizada;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 8px 8px 8px 5px;
+    background: var(--color-bg-second);
+    color: white;
+    height: 45px;
+    }
+    .volver a{
+        text-decoration: none;
+    }
+    .volver a:hover{
+        text-decoration: none;
+    }
 
 /* citas - hablamos */
 .citas {
@@ -303,6 +360,15 @@ aside a:hover {
     }
 }
 
+/* Contacto */
+.formulario .form-label {
+    color: var(--color-bg-second);
+    font-size: 1.5rem;
+}
+.form-check {
+    color: var(--color-bg-second);
+}
+
 
 /* footer */
 .footer-sitio {
@@ -311,6 +377,9 @@ aside a:hover {
 .footer-sitio ul {
     list-style: none;
     /* line-height: 2.5rem; */
+}
+.footer-sitio p {
+    color: var(--color-bg-sex);
 }
 .footer-sitio a {
     color: var(--color-bg-sex);
