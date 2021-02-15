@@ -89,7 +89,7 @@ body {
 }
 .imagen-fabrica {
     min-height: 20rem;
-    background-image: url(/img/fabrica.jpg);
+    background-image: url(../img/fabrica.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -106,7 +106,7 @@ body {
 .imagen-composicion {
     min-height: 25rem;
     background-size: 100%;
-    background-image: url(/img/mascarillas-quirúrgicas-3-capas.png);
+    background-image: url(../img/mascarillas-quirúrgicas-3-capas.png);
     background-repeat: no-repeat;
 }
 /* creamos un media query para que se vean las imágenes grandes y más altas en pantalla grande y tablet */
@@ -182,21 +182,21 @@ body {
 }
 .imagen-mascarilla {
     min-height: 15rem;
-    background-image: url(/img/higienicas.jpg);
+    background-image: url(../img/higienicas.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .imagen-mascarilla-tela {
     min-height: 15rem;
-    background-image: url(/img/tela.jpg);
+    background-image: url(../img/tela.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .imagen-mascarilla-ffp2 {
     min-height: 15rem;
-    background-image: url(/img/fpp2.jpg);
+    background-image: url(../img/fpp2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
