@@ -91,6 +91,26 @@ body {
     color: var(--color-bg-second);
 }
 
+/* Botones */
+.btn-primary {
+    background-color:var(--color-bg-quin);
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    transform: scale(1.1);
+    background-color:var(--color-bg-quin);
+    color: var(--color-bg-second);
+}
+@media (min-width: 768px) {
+    .btn-primary {
+        padding: 0;
+    }
+ }
+
 /** Somos fabricantes **/
 .fondo-principal {
     background-color: var(--color-bg-second);
@@ -106,8 +126,11 @@ body {
 /* media querys */
 @media (min-width: 768px) {
     /* seleccionamos el primer div de imagen-superior e imagen-inferior */
-     .imagen-fabrica {
-         height: 35rem;
+    .fondo-principal {
+        min-height: 15rem;
+     } 
+    .imagen-fabrica {
+         height: 25rem;
          background-size: 100%;
      } 
      .contenido-f-principal h2 {
@@ -116,6 +139,9 @@ body {
      }
      .contenido-f-principal h4 {
         font-size: 1.2rem;
+     }
+     .contenido-f-principal p {
+        font-size: 0.9rem;
      }
  }
 @media (min-width: 992px) {
@@ -169,37 +195,73 @@ body {
 }
 
 .imagen-composicion {
-    min-height: 25rem;
-    background-size: 100%;
+    min-height: 30rem;
+    background-size: 90%;
     background-image: url(../img/mascarillas-quirurgicas-3-capas.png);
     background-repeat: no-repeat;
 }
 /* creamos un media query para que se vean las imágenes grandes y más altas en pantalla grande y tablet */
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     /* seleccionamos el primer div de imagen-superior e imagen-inferior */
     .composicion {
-        min-height: 23rem;
+        min-height:15rem;
     } 
     .imagen-composicion {
-         height: 25rem;
-         background-size: 100%;
+        min-height: 25rem;
+        background-size: 95%;
      } 
      .composicion h3 {
          font-size: 1.3rem;
+     }
+     .composicion p {
+        font-size: 0.9rem;
+     }
+ }
+ @media (min-width: 576px) {
+    /* seleccionamos el primer div de imagen-superior e imagen-inferior */
+    .composicion {
+        min-height:15rem;
+    } 
+    .imagen-composicion {
+        min-height: 30rem;
+        background-size: 95%;
+     } 
+     .composicion h3 {
+         font-size: 1.3rem;
+     }
+     .composicion p {
+        font-size: 0.9rem;
+     }
+ }
+
+@media (min-width: 768px) {
+    /* seleccionamos el primer div de imagen-superior e imagen-inferior */
+    .composicion {
+        min-height:15rem;
+    } 
+    .imagen-composicion {
+        min-height: 20rem;
+        background-size: 100%;
+     } 
+     .composicion h3 {
+         font-size: 1.3rem;
+     }
+     .composicion p {
+        font-size: 0.9rem;
      }
  }
 @media (min-width: 992px) {
     /* seleccionamos el primer div de imagen-superior e imagen-inferior */
      .imagen-composicion {
-         height: 30rem;
+         min-height: 23rem;
          background-size: 100%;
      } 
  }
  @media (min-width: 1200px) {
     /* seleccionamos el primer div de imagen-superior e imagen-inferior */
      .imagen-composicion {
-         height: 25rem;
-         background-size: 70%;
+        min-height: 30rem;
+        background-size: 100%;
      } 
      .composicion h3 {
         font-size: 2rem;
@@ -209,7 +271,7 @@ body {
     /* seleccionamos el primer div de imagen-superior e imagen-inferior */
      .imagen-composicion {
          height: 32rem;
-         background-size: 80%;
+         background-size: 100%;
      } 
      .composicion h3 {
         font-size: 2.5rem;
@@ -232,6 +294,11 @@ body {
     font-family: 'Lato', sans-serif;
     color: var(--color-bg-sex);
 }
+@media (min-width: 768px) {
+    .catalogo-info h2 {
+        font-size: 1.8rem;
+    }
+ }
 .catalogo {
     background-color: var(--color-bg-second);
 }
@@ -252,18 +319,10 @@ body {
     margin-top: -1rem;
     width: 95%;
 }
-.catalogo-info .btn-primary {
-    border-radius: 0;
-    background-color:var(--color-bg-quin);
-    border: none;
-    transition: 0.3s;
-}
-.catalogo-info .btn-primary:hover {
-    transform: scale(1.1);
-}
+
 @media (min-width: 768px) {
     .catalogo-info {
-        width: 94%;
+        width: 90%;
     }
 }
 /* página catalogo */
@@ -299,12 +358,7 @@ body {
 .productos .card-body {
     background-color: var(--color-bg-second);
 }
-.productos .card a {
-    color: var(--color-bg-sex);
-}
-.productos .card a:hover {
-    text-decoration: none;
-}
+
 .productos .card-title {
     color: var(--color-bg-sex);
     font-size: 1.5rem;
@@ -380,18 +434,7 @@ ol {
     line-height: 2.6rem;
     color: var(--color-bg-sex);
 }
-.btn-primary {
-    background-color:var(--color-bg-quin);
-    border: 0;
-    padding: 1rem 5rem;
-    border-radius: 0;
-    font-size: 1.2rem;
-    transition: 0.3s;
-}
-.btn-primary:hover {
-    transform: scale(1.1);
-    background-color:var(--color-bg-quin);
-}
+
 
 /* Hero */
 .hero {
@@ -425,13 +468,12 @@ ol {
 
 /* Sidebar */
 aside {
-    background-color: var(--color-bg-quin);
-    color: #ffffff;
+    background-color: var(--color-bg-second);
 }
 aside .contacto-sidebar {
     font-size: 1.5rem;
 }
-aside a {
+aside a, p {
     color: var(--color-bg-sex);
 }
 aside a:hover {
@@ -493,4 +535,8 @@ aside a:hover {
     background-color: var(--color-bg-second);
     color: var(--color-bg-sex);
     font-size: .8rem;
+}
+/* RGPD */
+.rgpd p {
+    color: var(--color-bg-second);
 }
