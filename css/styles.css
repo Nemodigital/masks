@@ -106,7 +106,7 @@ body {
 .imagen-composicion {
     min-height: 25rem;
     background-size: 100%;
-    background-image: url(../img/mascarillas-quirúrgicas-3-capas.png);
+    background-image: url(../img/mascarillas-quirurgicas-3-capas.png);
     background-repeat: no-repeat;
 }
 /* creamos un media query para que se vean las imágenes grandes y más altas en pantalla grande y tablet */
@@ -268,7 +268,7 @@ ol {
 
 /* citas - hablamos */
 .citas {
-    background-image: url(/img/oficinas.jpg);
+    background-image: url(../img/oficinas.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
